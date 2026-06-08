@@ -1,4 +1,4 @@
-# AI301
+# su26-ai301-contribution
 # Contribution [#]: [Issue Title]
 
 **Contribution Number:** [1 / 2 / 3]  
