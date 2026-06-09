@@ -1,10 +1,10 @@
 # su26-ai301-contribution
-# Contribution [#]: [Issue Title]
+# Contribution [1]: feat: Add top-level daft.concat() for concatenating multiple DataFrames #6892
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** 1
+**Student:** Ran Duan
+**Issue:** [[GitHub issue link]](https://github.com/Eventual-Inc/Daft/issues/6892)  
+**Status:** [Phase I] [In Progress]
 
 ---
 
