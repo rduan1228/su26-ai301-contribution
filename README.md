@@ -10,7 +10,8 @@
 
 ## Why I Chose This Issue
 
-Having worked with Spark and Databricks, I've personally hit this exact pain point — looping through DataFrames to concatenate them is a common and annoying pattern in real pipelines. This issue is also a great entry point into the Daft codebase: well-scoped, pure Python, and the implementation path is already clear from the issue description.
+Having worked with Spark and Databricks, I've personally hit this exact pain point. This issue is also a great entry point into the Daft codebase: well-scoped, pure Python, and the implementation path is already clear from teh issue descritpion.
+
 ---
 
 ## Understanding the Issue
