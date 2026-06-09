@@ -10,28 +10,31 @@
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
-
+Having worked with Spark and Databricks, I've personally hit this exact pain point — looping through DataFrames to concatenate them is a common and annoying pattern in real pipelines. This issue is also a great entry point into the Daft codebase: well-scoped, pure Python, and the implementation path is already clear from the issue description.
 ---
 
 ## Understanding the Issue
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+No top-level daft,concat() exists. users must manually loop and chain df.concat(other) calls to combine multiple DataFrames. 
 
 ### Expected Behavior
 
-[What should happen?]
+daft.concat([df1, df2, df3) returns a single concatenated DataFrame, similar to pd.concat() in pandas.
 
 ### Current Behavior
 
-[What actually happens?]
+Users must write:
+result = dfs[0]
+for df in dfs[1:]:
+    result = result.concat(df)
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
-
+daft/__init__.py - expose the new top-level function
+DataFrame.concat() - existing method that the new function wraps
+Tests - new test coverage for teh top-level API
 ---
 
 ## Reproduction Process
